@@ -177,6 +177,7 @@ async function runDca() {
     logToFile("DCA run completed", { success: true });
   } catch (err) {
     logToFile("DCA run failed", {
+      success: false,
       err,
     });
     process.exit(1);
